@@ -1,0 +1,44 @@
+Git is a decentralized and distributed version control system. While it is decentralized, most people still choose to use it with a central server to serve as the main repository for a project or team. Because of its distributed nature, Git can scale massively. Another key benefit of being distributed is that most operations in Git are local. There are only a few commands that require a network connection. Since most operations are local, git is very fast with the same operations.
+ 
+In Git, collections of version control files are kept together in a Repository, which contains all the files related to a specific project or application.
+The three local states related to files managed by Git are:
+ the working directory,
+ the staging area, and 
+ the Git repository or the commit history.
+
+The 'working directory' is the folder on your computer that holds all the project or application files. Usually, within the working directory is a hidden folder called the .git folder, that contains the actual Git repository. 
+The 'Git repository' manages the Git commit history, ie,  all the changes that are finalized and permanently part of the Git repository.
+In between is the 'Git staging area', often referred to as the 'Git index'. It is a holding area for queuing up changes for the next commit.
+The files can be moved in and out of the staging area without impacting the Git repository, as they aren't committed yet.
+The three states of Git are specific to the local Git repository. 
+The fourth state is the remote state. The remote repository is just another repository with its own three states internally. It is the last step in the basic Git workflow.
+
+The master branch: Conceptually, branches work like they do in other source control systems. They are timelines that contain your changes. In Git, branches contain commits. When we start off, Git provides us with a default branch named master.
+
+Reasons for using Commandline over Graphical client: Git was originally designed as a command line tool. Nearly all online assistance, websites, blogs, or other tutorials use the command line.
+
+Create a github account and make a public repository with a suitable title and description.
+
+By default, the terminal program should put the user in its user's home directory, which can be confirmed by typing pwd.To create that directory, type mkdir projects and then press enter. Then type cd projects, press enter, now on typing pwd, we can see our projects folder underneath the user's home directory.
+To know the version of git: Type git version in the Gitbash application. 
+
+Git basically requires two bits of information: the user's name and email address.
+for the username: type git config --global user.name  then type the name inside double quotes, press enter.
+for the email address: type git config --global user.email , and in double quotes enter the email address.
+Now confirm the information through: git config --global --list.
+
+To get a copy of a repository onto the local system. The process to do that is called cloning a repository. Copy the HTTPS URL for the repository, and then return to the terminal and type git clone , and now just paste the URL and then press enter. Git then goes out to GitHub and makes a full copy of the repository on GitHub to the local system. Git then automatically creates a directory named after our repository. This can be confirmed by typing ls, then pressing enter, which lists out the contents of the current directory. 
+To know about the state of the repository, type git status.
+The master branch (or the main branch) is the default branch, by convention, for a Git repository.
+
+To add a new file to the repository in the local system, use the bash commands to create a simple text file.
+Type: echo, spacebar, and then type the contents of the file inside double quotes.After that type  start.txt, press enter. This new file is an untracked file because it is just a file in our working directory that hasn't been added to Git yet.
+
+Type git add , and then the name of the file: start.txt.Press enter. Now, the new file is in the staging area. 
+to commit the new file into the repository, type git commit -m , and in double quotes a commit message: Adding start text file, then press enter.
+Now, on checking the git status, Git tells us that we're back in a clean working directory state, and that our master branch is ahead of the origin master by one commit.So, now the new file has been moved from the staging area, into the local repository.
+
+To publish the changes back to Github, return to the terminal and type: git push origin master.
+
+Now press enter. Since we are making changes to your repository on GitHub, the git push command will prompt us for our GitHub username and password.
+If we did everything correctly, our new file should be on the GitHub copy of our repository.
