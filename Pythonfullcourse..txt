@@ -1,0 +1,158 @@
+Python is a multi-purpose programming language that can be used for machine learning, AI, and Web development. Python program can be downloaded and installed through the Python.org website. A code editor is required to write, edit and execute the code. It can be downloaded and installed from Jetbrains.com. 
+Create a new project in the Code Editor (Pycharm).  
+
+print("text") - a function that displays text messages on our application window, after running our Python program. Use triple single quotes to use single and double quotes inside a string. 
+
+The terminal window shows the output of our code after running the Python file.
+
+A Python program is executed from top to bottom, line by line. Python is case-sensitive. 
+
+A string is a series of characters. Written inside double or single quotes. "text"
+
+Variable - assigning a number(integer or float), string, or boolean value(False or True) to a word or multiple words. Multiple words should be separated by an underscore.  For example, age = 20, price = 19.95, first_name = "Avnish",  online = False, offline = True. To Print variable age, print(age). 
+If same variable is used for something new, its old value will be replaced by new one. 
+
+Input - input() - to get input from user after running the code.-input("What's your name? "). The input is always taken as a string.
+ 
+String concatenation - adding two strings - example, print("Hello" + Name). The Variable 'Name' must be a string. print("Sum is" + str(Sum)).  
+
+Type conversion - convert string to integer and vice versa. Ex, int(input(" ")) - String is converted to an integer. Also, we can use float(), bool(), str() in place of int(). 
+
+Strings - indexing begins from 0  from left to right, and -1 from right side. 
+After assigning a string to a variable, say name = "Thomas Shelby", several functions can be performed by adding a dot, name. , and then choosing functions from Dropbox. The original string and variable are unaffected. 
+print(name[1]) --- h, print(name[-2]) --- b, print(name[2:4])--- om .
+formatted string - f"{variable1} text {variable2}...". 
+len - function to count no. of char in string. 
+
+'in' operator -  to check whether a group of characters is present in strings. Output is Boolean. Ex, print("mas" in name). o/p is True. 
+
+Arithmetic Operators - +,-,*,/. Modulus op - % - gives the remainder of a division. Exponent(**) - 10**3 - 1000. // - gives the integral part of a division as output.
+x = 10, x += 3 -- new x = 13. -=, *=, /=. 
+
+Operator precedence -- EBODMAS rule. E - Exponential. 
+
+Comparison Operators - >, <, >=, <=, ==, !=. O/p is True or False. 
+
+Logical Operators - and, or, not. O/p is True or False.
+
+Comments start with "#". They are not executed. 
+
+If statements - if,elif,else
+temp=35
+if temp>30:
+    print("It's a hot day")
+    print("Drink water")
+elif temp>20: # (20,30]
+    print("It's a nice day")
+
+While loop - ex, 
+i=1
+while i<=5:
+    print(i)
+    i=i+1
+break - function used to break a loop cycle. 
+
+Nested Loops - Loops within the loops. 
+
+Lists - names = ["John", "Bob", "Mosh", "Sam", "Mary"], numbers = [1,2,3,4,5]
+To know the number of objects in a list, print(len(name of the list)). 
+More functions can be performed on lists by adding a dot --- names. 
+
+2D lists- 
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+
+
+For loop - ex,
+ Color = "Blue"
+for item in Color:
+    print(item)
+# item will be equal to 1 char in each loop from left to right. item acts as a variable. 
+
+
+
+Range Function - to generate a sequence of numbers.
+numbers = range(5) # range is assumed[0,5) --- 0,1,2,3,4
+numbers = range(5,10) # it means [5,10)
+numbers = range(5, 10, 2) # 2 acts as a step
+
+Tuples - Like lists, but can't be changed once created. Numbers = (1,2,3,3,4,5,5,2,1,1,7). 
+
+
+Unpacking - 
+
+coordinates = (1, 2, 3)
+
+x, y, z = coordinates 
+ # Same as x = coordinates[0], y = coordinates[1], z = coordinates[2]
+# This is unpacking.
+print(x)
+print(y)
+print(z)
+
+Dictionary - 
+
+customer = {
+    "name": "John Smith",
+    "age": 30,
+    "is_verified": True
+}
+
+print(customer["name"])
+print(customer.get("name"))
+print(customer.get("Name"))
+
+customer["birthdate"] = "Jan 1 1980"
+# Adding more data in the dictionary
+
+Function - A container for a few lines of code to perform a specific task.
+
+ def greet_user(name):
+    print(f"Hi There! {name}")
+    print("Welcome Aboard")
+
+
+print("Start")
+greet_user(John)
+print("Finish")
+
+name is the parameter here, gives input to function. 
+
+Keyword and Positional Arguments. 
+
+After running the code, if the exit code is 0, then the code has run successfully. Else, it has crashed. 
+
+Handling Errors -  use 'try:' and 'except'. Prevents crashes.
+
+Class - To define new 'types'. Constructors. Inheritance. 
+
+Module - A file with some Python Code.For Better organization and structure of Code. Packages. 
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
