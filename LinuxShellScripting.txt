@@ -1,0 +1,20 @@
+Linux shell scripting is the process of creating and executing scripts in a shell language, such as Bash, to automate tasks or carry out complex tasks on a Linux system.
+
+Shell is an operating system command-line interface which enables users to communicate with it.  
+
+Variables are utilized by shell scripts to store data. They can store numbers, texts, or various types of info. Without specifying their type, variables are established and the "=" operator is what's used to assign values to these.
+
+Comments are used to give explanations or notes. # 
+
+Execution of commands - Shell scripts may execute programs, scripts, and system commands by simply writing the command on a new line. The command's output can be stored and stored in variables for additional analysis.
+
+Shell scripts - utilize control structures like conditional statements (if-else, case) and loops (for, while) to repeatedly process a set of data or manage the flow of execution based on conditions.
+
+Functions -  enable modularity and reusability by enabling us to group a group of commands together. They may take input parameters and generate outcomes.
+
+Input and output -  Shell scripts can read from files with the "read" command or by redirecting input from a file. They can also accept input from people. The "echo" command can be used to display output on the screen or direct it to a file.
+
+Shell scripts have the ability to create, read, write, and alter files and directories by applying commands like "mkdir," "cp," "mv,"
+In shell scripting, error handling is crucial. Conditional statements and exit codes are tools for error checking and handling.
+
+Execution of scripts -  In order to run a shell script, make it executable using the "chmod" command.
